@@ -46,7 +46,7 @@
             <div class="kt-footer__wrapper">
                 <div class="kt-footer__logo">
                     <a class="kt-header__brand-logo" href="?page=index&amp;demo=demo2">
-                        <img alt="Logo" src="assets/media/logos/logo-4-sm.png" class="kt-header__brand-logo-sticky">
+                        <img alt="Logo" src="{{ asset('imagem/logo_desbravador_nota_10.png') }}" class="kt-header__brand-logo-sticky">
                     </a>
                     <div class="kt-footer__copyright">
 

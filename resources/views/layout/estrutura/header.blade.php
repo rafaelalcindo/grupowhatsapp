@@ -5,8 +5,8 @@
         <!-- begin:: Brand -->
         <div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
             <a class="kt-header__brand-logo" href="?page=index">
-                <img alt="Logo" src="assets/media/logos/logo-4.png" class="kt-header__brand-logo-default" />
-                <img alt="Logo" src="assets/media/logos/logo-4-sm.png" class="kt-header__brand-logo-sticky" />
+                <img alt="Logo" src="{{ asset('imagem/logo_desbravador_nota_10.png') }}" class="kt-header__brand-logo-default" />
+                <img alt="Logo" src="{{ asset('imagem/logo_desbravador_nota_10.png') }}" class="kt-header__brand-logo-sticky" />
             </a>
         </div>
 

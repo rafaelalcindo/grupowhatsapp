@@ -93,8 +93,8 @@
 									</div>
 									<div class="kt-subheader__toolbar">
 										<div class="kt-subheader__wrapper">
-											<a href="#" class="btn kt-subheader__btn-secondary">
-												Reports
+											<a href="{{ url('/grupo-whatsapps') }}" class="btn kt-subheader__btn-secondary">
+												Criar Grupos
 											</a>
 											<div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Quick actions" data-placement="top">
 												<a href="#" class="btn btn-danger kt-subheader__btn-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -592,14 +592,17 @@
 		<script src="{{asset('assets/js/pages/dashboard.js')}}" type="text/javascript"></script>
 
         <script src="{{ asset('js/jquery.js') }}" defer></script>
+        <script src="{{ asset('js/jquery.repeater.min.js') }}" defer></script>
 
 
         <script src="{{ asset('js/popper.js') }}" defer></script>
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
         <script src="{{ asset('js/jquery.mask.js') }}" defer></script>
 
         <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" type="text/css">
         <script src="{{ asset('js/select2.min.js') }}" defer></script>
+
+
         {{-- <script src="{{ asset('js/bootstrap.min.js') }}" defer></script> --}}
 
 
@@ -612,8 +615,12 @@
 
         <script src="{{ asset('js/daterangepicker.js') }}" defer></script>
 
-        <script src="{{ asset('js/geral/geralMacara.js') }}" defer></script>
-        <script src="{{ asset('js/geralApi.js') }}" defer></script>
+        <script src="{{ asset('js/geral/geral.js') }}" defer></script>
+
+        {{-- <script src="{{ asset('js/geral/geralMacara.js') }}" defer></script>
+        <script src="{{ asset('js/geralApi.js') }}" defer></script> --}}
+
+        @stack('scripts')
 
 		<!--end::Page Scripts -->
 	</body>

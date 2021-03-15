@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.index');
 });
+
+Route::get('/grupo-whatsapps', 'GrupoWhatsappsController@index');
+Route::post('/grupo-whatsapps', 'GrupoWhatsappsController@store');
